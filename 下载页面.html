@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>草地样方调查 - 下载页面</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #FF9800, #FF5722);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+        }
+        .file-list {
+            list-style: none;
+        }
+        .file-item {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s;
+        }
+        .file-item:hover {
+            background: #e8f5e9;
+            transform: translateX(5px);
+        }
+        .file-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+        .file-icon.zip { background: #2196F3; color: white; }
+        .file-icon.html { background: #E91E63; color: white; }
+        .file-icon.md { background: #FF5722; color: white; }
+        .file-info { flex: 1; }
+        .file-name { font-weight: 600; color: #333; font-size: 14px; }
+        .file-size { font-size: 12px; color: #888; }
+        .download-btn {
+            background: linear-gradient(135deg, #4CAF50, #43A047);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(76, 175, 80, 0.4);
+        }
+        .note {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff3e0;
+            border-radius: 10px;
+            font-size: 13px;
+            color: #e65100;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🌿</div>
+        <h1>草地样方调查</h1>
+        
+        <ul class="file-list">
+            <li class="file-item">
+                <div class="file-icon zip">📦</div>
+                <div class="file-info">
+                    <div class="file-name">草地样方工具_手机版.zip</div>
+                    <div class="file-size">876 KB</div>
+                </div>
+                <a href="草地样方工具_手机版.zip" download class="download-btn">下载</a>
+            </li>
+            <li class="file-item">
+                <div class="file-icon zip">📦</div>
+                <div class="file-info">
+                    <div class="file-name">草地样方调查项目.zip</div>
+                    <div class="file-size">870 KB</div>
+                </div>
+                <a href="草地样方调查项目.zip" download class="download-btn">下载</a>
+            </li>
+            <li class="file-item">
+                <div class="file-icon html">🌐</div>
+                <div class="file-info">
+                    <div class="file-name">界面预览.html</div>
+                    <div class="file-size">41 KB</div>
+                </div>
+                <a href="草地样方调查界面预览.html" target="_blank" class="download-btn" style="background: linear-gradient(135deg, #9C27B0, #7B1FA2);">查看</a>
+            </li>
+            <li class="file-item">
+                <div class="file-icon md">📖</div>
+                <div class="file-info">
+                    <div class="file-name">APK构建说明.md</div>
+                    <div class="file-size">2.5 KB</div>
+                </div>
+                <a href="安卓APK构建说明.md" download class="download-btn">下载</a>
+            </li>
+        </ul>
+        
+        <div class="note">
+            <strong>📱 使用说明：</strong><br>
+            1. 点击"下载"按钮保存文件<br>
+            2. 在手机上用解压软件打开 ZIP 文件<br>
+            3. 解压到：Download/Android/草地样方工具/<br>
+            4. 用 Android Studio 打开 android/ 文件夹构建 APK
+        </div>
+        
+        <div class="footer">
+            🌿 草地样方调查工具 v1.0
+        </div>
+    </div>
+</body>
+</html>
